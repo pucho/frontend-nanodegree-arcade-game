@@ -9,5 +9,13 @@
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
+    <script type="text/javascript">
+      var audio = new Audio('mp3/bensound-cute.mp3');
+      audio.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+      }, false);
+      audio.play();
+    </script>
 </body>
 </html>
