@@ -89,7 +89,7 @@ Player.prototype.render = function() {
   ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
   ctx.font = "20px Arial";
   ctx.fillStyle = "black";
-  var text = `Score: ${player.score}`;
+  var text = `Score: ${this.score}`;
   ctx.fillText(text,10,40);
 };
 
@@ -101,15 +101,15 @@ Player.prototype.reset = function() {
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
-var player = new Player;
+var player = new Player();
 var allEnemies = [];
 var enemyPositions = [300, 230, 145, 60];
 //Random speed generator for enemies
 var createEnemies = function() {
   for (var i = 0; i < enemyPositions.length; i++) {
-    enemy = new Enemy(-100, enemyPositions[i], (Math.floor((Math.random() * 500) + 100)))
+    enemy = new Enemy(-100, enemyPositions[i], (Math.floor((Math.random() * 500) + 100)));
     allEnemies.push(enemy);
-  };
+  }
 };
 createEnemies();
 
