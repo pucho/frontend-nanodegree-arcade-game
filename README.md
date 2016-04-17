@@ -1,6 +1,8 @@
 # Frontend Nanodegree Arcade Game
 This is the submission for the Arcade Game project for FEND at Udacity
 ## How to play
+Visit http://pucho.github.io/frontend-nanodegree-arcade-game to play!
+
 Use the cursor arrows on your keyboard to move through the board while avoiding
 the bugs. You will be awarded 100 points each time you reach the water while you
 will lose 80 points for touching a bug.
